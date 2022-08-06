@@ -12,8 +12,8 @@ def test_make_directory():
 
 def test_delete_file_dir():
     mkdir('delme')
-    assert ('delme') == 'Файл(папка) успешно удален!', 'Test failed!'
-    assert ('delme') == 'Такого объекта не сущестует!', 'Test failed!'
+    assert delete_file_dir('delme') == 'Файл(папка) успешно удален!', 'Test failed!'
+    assert delete_file_dir('delme') == 'Такого объекта не сущестует!', 'Test failed!'
 
 
 def test_change_dir():
